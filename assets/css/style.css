@@ -1,6 +1,6 @@
 .profile-pic {
   position: relative;
-  max-width:130px;
+  max-width:145px;
   max-height:130px;
   width: auto;
   height: auto;
@@ -220,7 +220,7 @@ dt {
 }
 
 ul.side-nav {
-  width: 190px;
+  width: 250px;
 }
 
 ul.side-nav li {
