@@ -335,17 +335,24 @@ body {
 
 }
 
+#pro-card{
 
+  display: flex;
+  justify-content: space-between;
+}
 #left {
-    width: 40%; /* 40% width */
-    margin: 10% -12% 0% -27%;
-    position: fixed; /* Make left column fixed */
+  
+    width: 100%; 
+    /* margin: 26% -12% 0% -27%; */
+    position: fixed; 
 
 }
 
 #right {
-    width: 100%; /* 60% width */
+    width: 100%; 
 }
+
+
 
 .card-content-edu{
   display: flex;
@@ -393,21 +400,43 @@ th, td {
         max-width: 1280px;
 }
 
-a.hoverline {
+/* a.hoverline {
     border-bottom: 3px solid transparent !important;
     padding: 3px 3px 0 3px;
     transition: 0.25s all;
     -moz-transition: 0.25s all;
     -webkit-transition: 0.25s all;
-  }
+  } */
 
 
 
 
 /* Styles for mobile screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card {
       width: 100%;
 
   }
+} */
+
+
+/* Style for buttons */
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Style for button links */
+button a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Hover effect */
+button:hover a {
+  background-color: #f0f0f0;
 }
