@@ -400,3 +400,14 @@ a.hoverline {
     -moz-transition: 0.25s all;
     -webkit-transition: 0.25s all;
   }
+
+
+
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+  .card {
+      width: 100%;
+
+  }
+}
