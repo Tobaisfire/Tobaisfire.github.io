@@ -4,146 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keval Sing Saud</title>
-    
-    <link rel="stylesheet" type="text/css" href="assets/css/resume.css"/>
- 
+    <link rel="stylesheet" href="assets/css/resume.css"/>
 </head>
 <body>
-    <div style="width:100%;border-style:solid;border-color:black;border-width:0px;border-bottom-width:2px;padding:0px;margin:0px;">
-        <img id="profile" src="assets/img/passport-new.jpg" alt="Keval Sing Saud" style="padding:0px;margin:0px;"/>
-        <a href="blog.html">Blog</a>
-        </div>
-
-        <div style="width:100%;border-style:solid;border-color:black;border-width:0px;border-bottom-width:2px;padding:0px;margin:0px;">
-            <center class="flash">
-            <!-- BEGIN ANNOUNCEMENT -->
-            <!-- Type in the announcement below -->
-            <!-- <p>New Portfolio</p> -->
-            <!-- END ANNOUNCEMENT -->
-            <br>
-            </center>
-            </div>
-
-    <div id="main_menu_box">
-        <ul class="main_menu" id="main_menu">
-        <li id="curr_main_menu"><a class="main_menu_item" href="index.html">Home</a></li>
-    
-        <li><a class="main_menu_item" href="about.html">About</a></li>
-        <li><a class="main_menu_item" href="Expirence.html">Expirence</a></li>
-        <li><a class="main_menu_item" href="project.html">Projects</a></li>
-        <li><a class="main_menu_item" href="skills.html">Skills</a></li>
-        <li><a class="main_menu_item" href="education.html">Education</a></li>
-   
-
-        <li><a class="main_menu_item" href="contact.html">Contact</a></li>
-        <li><a class="main_menu_item" href="https://Tobaisfire.github.io/assets/resume/Resume_Robust(CV)-Keval.pdf">Resume</a></li>
-      
-
-        <br>
-        <br><b class="para_heading"><!--Search--></b>
-        <li id="main_menu_item"><a class="main_menu_item" href="https://www.google.com/"><b style="font-weight:normal;border-width:0px;border-style:solid;border-top-width:2px;border-color:brown;padding-top:5px;font-style:italic;font-size:small;">Google Search</b></a></li>
-
-        </li>
-        </ul>
-        </div>
-    
-        <div>
-            <div style="font-size:1em;">
-                <div class="container" id="Project">
-                    <div class="col-md-9">
-                      <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-                        <div class="caption">
-                          <h2>Hi, I'm <span class="teal">Keval Sing Saud.</span></h2>
-                          
-                          <h4 style="color:black" > A <span id="typing-header"></span></h3>
-                          <h4>Passionate programmer, ardent learner with ability to learn complex problems in a jiffy</h4>
-                        </div>
-                        <div class="social">
-                          <a href="https://www.linkedin.com/in/keval-saud-1945231b2/" target="_blank">
-                            linkedin
-                          </a>
-                          <br>
-                          <a href="https://github.com/Tobaisfire" target="_blank">
-                           Github
-                          </a>
-            
-            
-                        </div>
-                        <div class="buttons">
-                          <a href="about.html" class="readme">Read More</a>
-                          <a href="contact.html" class="contactme">Contact Me</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            
-            <br> 
-            
-            <div class="box"></div> 
-            <br>
-            
-            <div id="ftr">
+    <header>
+        <div class="profile-header">
+            <img id="profile" src="assets/img/passport-new.jpg" alt="Keval Sing Saud">
+            <nav>
                 <ul>
-              
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="Expirence.html">Experience</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://Tobaisfire.github.io/assets/resume/Resume_Robust(CV)-Keval.pdf">Resume</a></li>
                 </ul>
-            </div>
-            
-            <div style="
-                width:50%;
-                float:right;
-                border-style:solid;
-                border-width:0px;
-                border-top-width:1px;
-                border-color:black;
-                ">
-          
-            </div>
-             
-            </div>
- 
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section class="intro">
+            <div class="container">
+                <div class="content">
+                    <h2>Hi, I'm <span class="highlight">Keval Sing Saud</span>.</h2>
+                    <h4>A <span id="typing-header"></span></h4>
+                    <h4>Passionate programmer, ardent learner with the ability to solve complex problems swiftly</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/keval-saud-1945231b2/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Tobaisfire" target="_blank">Github</a>
+                    </div>
+                    <div class="action-buttons">
+                        <a href="about.html" class="btn read-more">Read More</a>
+                        <a href="contact.html" class="btn contact-me">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<script>
-    // Define the list of headers
-const headers = [
-    "Fast Learner",
-    "Pythonist",
-    "Developer",
-    "Tech Enthusiast",
-  ];
-  
-  // Get the <h2> element
-  const headerElement = document.getElementById("typing-header");
-  
-  // Function to simulate typing animation
-  function typeAnimation(text, index, delay) {
-    setTimeout(() => {
-      headerElement.textContent = text.slice(0, index + 1);
-      if (index < text.length - 1) {
-        typeAnimation(text, index + 1, delay);
-      } else {
-        setTimeout(() => {
-          headerElement.classList.add("not-typing");
-          setTimeout(changeHeader, 1); // Change header after 1 second
-        }, 300); // Wait for 1 second after typing completes
-      }
-    }, delay);
-  }
-  
-  // Function to change the header
-  function changeHeader() {
-    const currentIndex = headers.indexOf(headerElement.textContent);
-    const nextIndex = (currentIndex + 1) % headers.length;
-    headerElement.textContent = "";
-    headerElement.classList.remove("not-typing");
-    typeAnimation(headers[nextIndex], 0, 100);
-  }
-  
-  // Start the typing animation
-  typeAnimation(headers[0], 0, 100);
-  
-</script>
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="https://www.google.com/">Google Search</a></li>
+            </ul>
+        </div>
+    </footer>
 
+    <script>
+        const headers = ["Fast Learner", "Pythonist", "Developer", "Tech Enthusiast"];
+        const headerElement = document.getElementById("typing-header");
+
+        function typeAnimation(text, index, delay) {
+            setTimeout(() => {
+                headerElement.textContent = text.slice(0, index + 1);
+                if (index < text.length - 1) {
+                    typeAnimation(text, index + 1, delay);
+                } else {
+                    setTimeout(() => {
+                        headerElement.classList.add("not-typing");
+                        setTimeout(changeHeader, 1000);
+                    }, 1000);
+                }
+            }, delay);
+        }
+
+        function changeHeader() {
+            const currentIndex = headers.indexOf(headerElement.textContent);
+            const nextIndex = (currentIndex + 1) % headers.length;
+            headerElement.textContent = "";
+            headerElement.classList.remove("not-typing");
+            typeAnimation(headers[nextIndex], 0, 100);
+        }
+
+        typeAnimation(headers[0], 0, 100);
+    </script>
 </body>
 </html>
