@@ -1,0 +1,249 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Keval Sing Saud | Projects</title>
+  <link rel="stylesheet" href="./assets/css/resume.css" />
+  <style>
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      margin: 32px 0;
+    }
+    .project-card {
+      background: #fffbe7;
+      border: 4px solid #222;
+      border-radius: 18px;
+      box-shadow: 4px 4px 0 #222, 8px 8px 0 #00bcd4;
+      max-width: 400px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      margin-bottom: 24px;
+    }
+    .project-card:hover {
+      box-shadow: 8px 8px 0 #222, 12px 12px 0 #00bcd4;
+      transform: scale(1.03) rotate(-1deg);
+    }
+    .project-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #00bcd4;
+      background: #e3eafc;
+    }
+    .project-content {
+      padding: 30px 20px 16px 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .project-title {
+      font-family: 'Bangers', 'Comic Neue', cursive, sans-serif;
+      font-size: 1.5em;
+      color: #222;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 0 #00bcd4, 4px 4px 0 #222;
+    }
+    .project-desc {
+      font-size: 1em;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    .project-features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 16px;
+      width: 100%;
+    }
+    .project-features li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 8px;
+      font-size: 1em;
+      font-weight: 600;
+      color: #222;
+    }
+    .project-features li::before {
+      content: '\2605'; /* star */
+      color: #00bcd4;
+      font-size: 1.2em;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-shadow: 1px 1px 0 #222;
+    }
+    .project-buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 8px;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    @media (max-width: 900px) {
+      .projects-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .project-card {
+        max-width: 98vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="comic-nav">
+    <a href="index.html" class="cool-btn">Home</a>
+    <a href="index.html#about" class="cool-btn">About</a>
+    <a href="index.html#experience" class="cool-btn">Experience</a>
+    <a href="projects.html" class="cool-btn active">Projects</a>
+    <a href="index.html#skills" class="cool-btn">Skills</a>
+    <a href="index.html#education" class="cool-btn">Education</a>
+    <a href="index.html#contact" class="cool-btn">Contact</a>
+    <a href="/assets/resume/Keval_Saud_2025_Resume.pdf" target="_blank" class="cool-btn">Resume</a>
+  </nav>
+  <main style="background: none; max-width: 1600px; width: 98vw; margin: 0 auto;">
+
+    <h1 class="comic-title" style="margin-top: 32px;">My Projects</h1>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="./assets/img/pro/webapp.jpg" alt="MedicLLM" class="project-img">
+        <div class="project-content">
+          <div class="project-title">MedicLLM: AI Assistant for Psychiatry</div>
+          <div class="project-desc">End-to-end web service for psychiatric diagnosis, medication, and treatment planning with multi-agent orchestration and XAI.</div>
+          <ul class="project-features">
+            <li>Multi-Agent Argumentative Reasoning: Each agent (Diagnosis, Drug, Treatment) debates and synthesizes the best clinical plan.</li>
+            <li>Explainable AI (XAI): Visual explanations and debate graphs for transparency.</li>
+            <li>Modern Medical Chat UI: ChatGPT-style interface tailored for clinical workflows.</li>
+            <li>Session Management: Persistent chat sessions, downloadable patient reports, and XAI visualizations.</li>
+            <li>Admin Panel: Full audit and management of all cases and messages. Dark/Light Mode: Professional, accessible UI for all environments.</li>
+            <li>Django API, Formeant multi-agent orchestration Qdrant vector search, 95% semantic match Dockerized microservices, XAI modules</li>
+            
+          </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/Tobaisfire/MedicalLLM-webapp.git" target="_blank" class="cool-btn">See Project</a>
+            <a href="https://www.youtube.com/watch?v=DmLgPgzHKw0" target="_blank" class="cool-btn">View Video</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="./assets/img/pro/Chat-app.jpg" alt="Tobis-Multi-LLM-Chatbot" class="project-img">
+        <div class="project-content">
+          <div class="project-title">Tobis-Multi-LLM-Chatbot</div>
+          <div class="project-desc">Tobis is a professional, modern chatbot interface that lets you chat with multiple large language models (LLMs) including OpenAI and Groq models.</div>
+          <ul class="project-features">
+            <li>Multi-Model Support: Choose from top OpenAI and Groq models for your chat experience.</li>
+            <li>Professional, Eye-Catching UI: Modern chat bubbles, branding, and a clean sidebar.</li>
+            <li>Session Management: Maintains conversation context across interactions.</li>
+            <li>Easy Model Switching: Change models instantly from the sidebar.</li>
+            <li>Responsive Design: Works great on desktop and mobile.</li>
+          </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/Tobaisfire/Tobis-Multi-LLM-Chatbot.git" target="_blank" class="cool-btn">See Project</a>
+            <a href="https://www.youtube.com/watch?v=-7LGtklxgWk" target="_blank" class="cool-btn">View Video</a>
+            <a href="https://tobisllm.streamlit.app" target="_blank" class="cool-btn">Live</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Project 3-->
+      <div class="project-card">
+        <img src="./assets/img/pro/dogri.jpg" alt="POS Tagger" class="project-img">
+        <div class="project-content">
+          <div class="project-title">Unresourced Language POS Tagger</div>
+          <div class="project-desc">Fine-tuned LLMs and classical models for sequence labeling on a 200K-tagged corpus, achieving 92% accuracy.</div>
+          <ul class="project-features">
+            <li>Finetuned LLMs (Gemma2 9B, Phi4 14B) and Trained SVM/HMM/BiLSTM/mBert on Million text Corpus</li>
+            <li>Feature engineering, hyperparameter tuning, Evalutaion, Agreement</li>
+            <li>EDA on Unresourced Language dataset and Visualizations</li>
+            <li>92% accuracy on unresourced language</li>
+            <li>Deployed on Streamlit</li>
+            <li>Python, PyTorch, Scikit-learn, Pandas, NLTK, Seaborn, Matplotlib, Unsloth, Google Colab, Hugging Face, Transformers</li>
+          </ul>
+          <!-- <div class="project-buttons">
+            <a href="https://github.com/Tobaisfire/POS-Tagger" target="_blank" class="cool-btn">See Project</a>
+            <a href="https://youtu.be/your-pos-tagger-demo" target="_blank" class="cool-btn">View Video</a>
+          </div> -->
+        </div>
+      </div>
+
+
+      <div class="project-card">
+        <img src="./assets/img/pro/admin-login.png" alt="Heart Disease Prediction System" class="project-img">
+        <div class="project-content">
+          <div class="project-title">Heart Disease Prediction System</div>
+          <div class="project-desc">The Heart Disease Prediction System is a web application developed using Python, Flask, MySQL, Apache server, and logistic regression with the Random Forest algorithm. The system aims to predict the likelihood of a patient having heart disease based on various input features.</div>
+          <ul class="project-features">
+            <li>Python: The primary programming language used for developing the Heart Disease Prediction System.</li>
+            <li>Flask: A web framework used for building the application and handling routing and request handling.
+            <li>MySQL: A relational database management system used for storing and managing user data, medical records, and prediction results.
+            <li>Apache Server: The application is deployed on an Apache server for hosting and serving the web application.
+            <li>Logistic Regression: A machine learning algorithm used for training the model to predict heart disease. <br> Random Forest: An ensemble learning algorithm utilized with logistic regression to enhance the accuracy of heart disease prediction.
+          </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/Tobaisfire/Heart_Disease_Prediction-FLask-.git" target="_blank" class="cool-btn">See Project</a>
+            <!-- <a href="https://youtu.be/your-ner-demo" target="_blank" class="cool-btn">View Video</a> -->
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="./assets/img/pro/dash.png" alt="NER BI-LSTM" class="project-img">
+        <div class="project-content">
+          <div class="project-title">Named Entity Recognition Using BI-LSTM</div>
+          <div class="project-desc">BiLSTM neural network for identifying and classifying named entities in text, with a robust preprocessing pipeline.</div>
+          <ul class="project-features">
+            <li>TensorFlow, NumPy, Pandas, scikit-learn</li>
+            <li>Matplotlib, Seaborn for visualization</li>
+            <li>Custom preprocessing and training workflows</li>
+            <li>Python, numpy, pandas, matplotlib, seaborn, scikit-learn, tensorflow</li>
+          </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/Tobaisfire/NER-BILSTM" target="_blank" class="cool-btn">See Project</a>
+            <!-- <a href="https://youtu.be/your-ner-demo" target="_blank" class="cool-btn">View Video</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="./assets/img/pro/geomovie.png" alt="Movie-GeoMania" class="project-img">
+        <div class="project-content">
+          <div class="project-title">Movie-GeoMania: Film Location Visualization</div>
+          <div class="project-desc">Interactive Folium map of top 250 IMDb films, with automated data extraction and a responsive Streamlit app.</div>
+          <ul class="project-features">
+            <li>A webapp built using streamlit to show fliming locations of top 250 IMDB rated movies on the geo map with exact Lat and long.</li>
+            <li>Python, Folium, Selenium, Streamlit</li>
+            <li>Automated data extraction</li>
+            <li>20% increase in user engagement</li>
+            <li> IMDB API</li>
+          </ul>
+          <div class="project-buttons">
+            <a href="https://github.com/Tobaisfire/Movie-GeoMania" target="_blank" class="cool-btn">See Project</a>
+            <!-- <a href="https://youtu.be/your-movie-geomania-demo" target="_blank" class="cool-btn">View Video</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="comic-footer">
+      Made with 🤖 and 💥 by Keval Sing Saud &mdash; Stay Awesome!
+    </footer>
+  </main>
+</body>
+</html> 
